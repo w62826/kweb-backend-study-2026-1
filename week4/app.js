@@ -24,7 +24,7 @@ async function getStudents(courseName) {
     
     const result = await runQuery(query);
     
-    console.log(`${courseName} 강의 수강 학생 목록 ===`);
+    console.log(`${courseName} 강의 수강 학생 목록`);
     console.log(result);
 }
 
