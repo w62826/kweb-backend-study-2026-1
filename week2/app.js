@@ -21,6 +21,9 @@ app.get("/user/:id", (req, res) => {
 const foodRouter = require('./food');
 app.use('/food', foodRouter);
 
+const mathRouter = require('./math');
+app.use('/math', mathRouter);
+
 app.get("/math/sum", (req, res) => {
     const a = req.query.a;
     const b = req.query.b;
